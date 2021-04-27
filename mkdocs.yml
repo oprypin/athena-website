@@ -42,6 +42,7 @@ plugins:
       handlers:
         crystal:
           crystal_docs_flags:
+            - '{crystal_src}/docs_main.cr'
             - lib/athena-spec/src/athena-spec.cr
             - lib/athena-event_dispatcher/src/athena-event_dispatcher.cr
             - lib/athena-config/src/athena-config.cr
@@ -61,6 +62,10 @@ plugins:
             lib/athena-validator: https://github.com/athena-framework/validator/blob/v{shard_version}/{file}#L{line}
             lib/athena: https://github.com/athena-framework/athena/blob/v{shard_version}/{file}#L{line}
             lib/athena-negotiation: https://github.com/athena-framework/negotiation/blob/v{shard_version}/{file}#L{line}
+  - autorefs:
+      import:
+        crystal:
+          - https://crystal-lang.org/api/latest/index.json
 
 markdown_extensions:
   - admonition

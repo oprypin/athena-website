@@ -16,6 +16,9 @@ for typ in root.lookup("Athena").walk_types():
         mkdocs_gen_files.set_edit_path(filename, typ.locations[0].url)
 
 for typ in root.types:
+    if not any(loc.filename.startswith('lib') for loc in typ.locations):
+        continue
+
     # Write the entry of a top-level alias (e.g. `AED`) to its appropriate section.
     if typ.kind == "alias":
         # Athena::Validator::Annotations -> Validator/aliases.md

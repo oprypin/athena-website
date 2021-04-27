@@ -1,6 +1,7 @@
-mkdocs
+git+https://github.com/mkdocs/mkdocs@master
 mkdocs-material
-mkdocstrings-crystal
-mkdocs-gen-files
-mkdocs-literate-nav
-mkdocs-section-index
+git+https://github.com/oprypin/mkdocs-autorefs@inv
+git+https://github.com/oprypin/mkdocstrings-crystal@inv
+git+https://github.com/oprypin/mkdocs-literate-nav@master
+git+https://github.com/oprypin/mkdocs-section-index@master
+git+https://github.com/oprypin/mkdocs-gen-files@master

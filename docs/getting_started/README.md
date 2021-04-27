@@ -47,7 +47,7 @@ ART.run
 ```
 
 Annotations applied to the methods are used to define the HTTP method this method handles, such as [ARTA::Get][Athena::Routing::Annotations::Get] or [ARTA::Post][Athena::Routing::Annotations::Post].  A macro DSL also exists to make them a bit less verbose;
-[ART::Controller.get][Athena::Routing::Controller:get(path,*args,**named_args,&)] or [ART::Controller.post][Athena::Routing::Controller:post(path,*args,**named_args,&)].  The [ARTA::Route][Athena::Routing::Annotations::Route] annotation can also be used to define custom `HTTP` methods.
+[ART::Controller.get][Athena::Routing::Controller:get] or [ART::Controller.post][Athena::Routing::Controller.post].  The [ARTA::Route][Athena::Routing::Annotations::Route] annotation can also be used to define custom `HTTP` methods.
 
 Controllers are simply classes and routes are simply methods.  Controllers and actions can be documented/tested as you would any Crystal class/method.
 
